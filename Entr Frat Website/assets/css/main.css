@@ -1,0 +1,207 @@
+html{
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+#navbar
+{
+    border-radius: 0px;
+    background-color: #212F3C;
+    /*background-color: #290C09;*/
+    font-family: 'Questrial';
+    font-size: 16px;
+}
+body
+{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+#brandImage
+{
+    width: 100px; 
+    margin-top: -40px;
+}
+
+
+.navbar a
+{
+    color: #C28E0E !important;
+}
+
+.navbar a:hover
+{
+    color: #98700D !important;
+}
+
+.navbar-brand
+{
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+
+#navEvents
+{
+    transform: translateX(-50%);
+    left: 40%;
+    position: absolute;
+}
+
+#navAbout
+{
+    transform: translateX(-50%);
+    left: 30%;
+    position: absolute;
+}
+
+#navLeadership
+{
+    transform: translateX(-50%);
+    left: 60%;
+    position: absolute;
+}
+
+#navContact
+{
+    transform: translateX(-50%);
+    left: 70%;
+    position: absolute;
+}
+
+
+.slideshow {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+.images {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../css/pjimage.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  animation: slideshow 100s linear infinite;
+    
+  transform: translate3d(0, 0, 0);
+}
+@keyframes slideshow {
+  0%    { left: 0; }
+  100%  { left: -200%; }
+}
+
+@keyframes moveSlideshow {  
+  100% { 
+    -webkit-transform: translateX(-200%);  
+  }
+}
+
+#titleDiv
+{
+    text-align: center;
+    top: 25%;
+}
+#title
+{
+    color: white;
+     text-shadow: -1px 0 #C28E0E, 0 1px #C28E0E, 1px 0 #C28E0E, 0 -1px #C28E0E;
+    font-family: 'Questrial';
+    font-size: 64px;
+}
+
+#mottoDiv
+{
+    text-align: center;
+    top: 30%;
+}
+
+#motto
+{
+    color: white;
+     text-shadow: -1px 0 #C28E0E, 0 1px #C28E0E, 1px 0 #C28E0E, 0 -1px #C28E0E;
+    font-family: 'Questrial';
+    font-size: 24px;
+}
+
+
+#rush{
+  z-index: 5;
+  display: inline-block;
+  position: absolute;
+  top: 62.5%;
+  left: 50%;
+  width: 300px;
+  height: 50px;
+  margin-left: -150px;
+  overflow-x: hidden;
+  /*text-align: center;*/
+}
+#rush_here{
+  border-color: white;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  font : normal 400 20px 'Josefin Sans', sans-serif;
+  /*text-align: center;*/
+  /*display: inline-block;*/
+  
+  /*bottom: 0;*/
+  /*text-shadow: none;*/
+  /*position: absolute;*/
+}
+
+#rush_here:hover {
+  color: black;
+  background-color: white;
+}
+#down{
+  top: 70%;
+  display: inline-block;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+}
+#down a {
+  position: absolute;
+  /*top: 100%;*/
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+#down a:hover {
+  opacity: .5;
+  color: white;
+  text-decoration: none;
+}
+
+#scroll a {
+  padding-top: 60px;
+}
+
+#scroll a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
