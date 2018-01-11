@@ -335,18 +335,22 @@ body
 {
     position: relative;
     overflow: hidden;
-    height: 878px;
+    /*height: 878px;*/
+    
+    min-height: 878px;
+    height: auto;
     max-width: 1920px;
     text-align: center;
     font-family: 'Questrial'; 
     background-color: #FFCCCC;
     color: white;
+
 }
 
 #positionImage
 {
 
-      width: 150px;
+    width: 150px;
     height: 150px;
     -webkit-border-radius: 150px;
     -webkit-background-clip: padding-box;
@@ -373,16 +377,20 @@ body
 #top
 {
     background-color: #FFB2B2;
+
+
 }
 
 #mid
 {
     background-color: #FF9999;
+    /*padding-bottom: 1px;*/
 }
 
 #bot
 {
-    background-color: #FF7F7F
+    background-color: #FF7F7F;
+    /*padding-bottom: 1px;*/
 }
 
 .Contact
