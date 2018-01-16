@@ -248,6 +248,7 @@ body
     border-left: white;
     border-right: white;
     margin-top: 20px;
+    margin-left: 15px;
 }
 
 .Events
@@ -659,6 +660,11 @@ h3 {
     font-size: 20px;
     /*margin-left: 70px;*/
 }
+
+.row {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+  }x
 
 
 
