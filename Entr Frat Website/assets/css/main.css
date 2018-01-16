@@ -8,7 +8,9 @@
 }
 body
 {
+    /*padding-top: 50px;*/
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 #brandImage
 {
@@ -68,7 +70,8 @@ body
   overflow: hidden;
   height: 100vh;
   width: 100vw;
-  max-width: 100%;
+  margin-right: 0px;
+  /*max-width: 100%;*/
 }
 .images {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../css/pjimage.jpg");
@@ -166,7 +169,10 @@ body
   position: relative;
   overflow: hidden;
     height: 430px;
-    max-width: 1920px;
+    width: 100%;
+    /*left: 50vw;*/
+    /*margin-left: -200px;*/
+    /*max-width: 1920px;*/
     text-align: center;
     font-family: 'Questrial';
     background-color: #8EA5BD;
@@ -176,11 +182,12 @@ body
 {
     margin-bottom: 30px;
     color: #212F3C;
+    /*width: 100vw;*/
 }
 
 #spanId1
 {
-    
+    width: 11vw;
     height: 100px;
     font-size: 50px;
     padding-top: 10px;
@@ -190,8 +197,8 @@ body
 }
 
 #spanId2
-{
-    
+{ 
+    width: 11vw;  
     height: 100px;
     font-size: 50px;
     padding-top: 10px;
@@ -202,7 +209,7 @@ body
 
 #spanId3
 {
-    
+    width: 11vw;  
     height: 100px;
     font-size: 50px;
     padding-top: 10px;
@@ -213,7 +220,7 @@ body
 
 #spanId4
 {
-    
+    width: 11vw;  
     height: 100px;
     font-size: 50px;
     padding-top: 10px;
@@ -236,6 +243,7 @@ body
 
 .container
 {
+    width: 100vw;
     background-color: #C0D7EF;
     border-left: white;
     border-right: white;
@@ -457,7 +465,7 @@ body
  }
  #down{
    top: 50%;
-   display: inline-block;
+   /*display: inline-block;*/
    left: 50%;
    width: 200px;
    margin-left: -100px;
@@ -509,29 +517,46 @@ body
 }
 
 .modal.in .modal-dialog {
-  transform: translate3d(0, 10vh, 0)!important;
+  transform: translate3d(0, 2vh, 0)!important;
   transition: 0.6s!important;
 }
 
 #rush_schedule{
-  background: #456789!important;
+  /*background: #456789!important;*/
+  background: #667db6!important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*border-color: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important;
+  border-color: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important;*/
   /*left: 50%;*/
   /*margin-left: -350px;*/
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   margin-top: 0px;
   margin-left: none!important;
+  
   /*top: 10vh!important;*/
 }
 ul.main { 
   list-style-type: none!important;
+  width: 85.25%;
+  /*padding: 0px;*/
   /*max-width: 75%;*/
   /*margin: 20px auto;*/
-  left: 20%;
+  /*left: 50%;*/
   /*margin-left: 100px;*/
   color: white;
   display: flex!important;
   text-align: center;
+  border-color: white;
+  border-width: 5px!important;
+  z-index: 30;
+  border-style: solid;
+  padding-bottom: 30px;
+  margin: 0px;
+  margin-left: 7.375%;
+  margin-top: 12%;
+  
 
 }
 
@@ -561,7 +586,7 @@ h3 {
   width: 80%;
   margin-top: 5%;
   padding-top: 3%;
-  color: white!important;
+  color: white;
 }
 
 .events-detail {
@@ -577,9 +602,25 @@ h3 {
 
 }
 
-.events-detail li:hover {
+.events-detail li:hover{
+  color: #667db6!important;
   background: #e9e9e9;
+  /*opacity: 0.5;*/
+  
 }
+
+.events-detail li:hover a span{
+  color: #667db6!important;
+  /*background: #e9e9e9;*/
+  /*opacity: 0.5;*/
+  
+}
+
+
+
+
+
+
 
 .event-name{
   /*width: 100%;*/
@@ -588,6 +629,8 @@ h3 {
   font-size: 30px;
   text-align: center;
 }
+
+
 
 .event-date {
   /*font-weight: 900;*/
@@ -608,6 +651,7 @@ h3 {
   display: block;
   color: white;
 }
+
 
 .event-location {
     /*font-size: .8em;*/
@@ -638,6 +682,50 @@ h3 {
   li.date p {
     margin:0;
   }
+
+  .About{
+    height: 100vh;
+  }
+
+  #spanId1, #spanId2, #spanId3, #spanId4 {
+
+    width: 22vw;
+  }
+
+  #pillars{
+
+    font-size: 15px!important;
+    margin-left: -3vw;
+
+  } 
+
+  .Events{
+    height: 300vh;
+  }
+
+  #changeInfo, #startupInfo, #indyInfo{
+    height: 330px;
+  }
+
+  .row {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+  }
+
+  .Events.row {
+    margin-left: -15px!important;
+    margin-right: -15px!important;
+  } 
+
+  #rush{
+    display: none;
+  }
+
+  .navbar{
+    margin-bottom: 0px!important;
+  }
+
+
 }
 
 .modal-body{
@@ -645,23 +733,40 @@ h3 {
 }
 
 .modal-content{
-  background: #456789!important;
+  background: #667db6!important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background-color: #456789!important;*/
+  /*background-image: url("assets/images/phoenix-no-bkg.png");*/
       -webkit-border-radius: 0px !important;
     -moz-border-radius: 0px !important;
     border-radius: 0px !important; 
 }
 
 .modal-header{
-  border-color: #456789!important;
+  border-bottom: none!important;
+  /*border-color: #456789!important;*/
+  background: #667db6!important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-color: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important;
+  border-color: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important;
 
 }
 
 .modal-footer{
-  border-color: #456789!important;
+  border-top: none!important;
+  /*border-color: #456789!important;*/
+    background: #667db6!important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-color: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important;
+  border-color: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6)!important;
 }
 
 .close_modal{
-  border-color: white;
+
+  /*border-color: white;*/
    color: black;
    /*width: 100%;*/
    /*height: 100%;*/
@@ -688,3 +793,6 @@ h3 {
   font-size: 30px!important;
   text-align: center!important;
 }
+
+
+

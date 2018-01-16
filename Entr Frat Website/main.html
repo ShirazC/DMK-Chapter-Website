@@ -18,19 +18,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/scroll.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css0">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
+
 </head>
 
-<body>
+<body ">
     
     <!-- Navbar !-->
    <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
       <div class="container-fluid">
-        <div class="navbar-header">
-          </div>
+
         
      <ul class="nav navbar-nav" id="nav">
           <li class="hidden-xs" id="navAbout"><a href="#About">ABOUT</a></li>
@@ -44,7 +45,7 @@
         </ul>
       
       </div>
-    </nav>!
+    </nav>
     
     <!-- First Block / Home !-->
     <div class="slideshow row">
@@ -65,7 +66,7 @@
         </div>
         <div class="col-lg-12" id='down'>
           <div id='scroll'>
-            <a href="#section02"><span></span>Learn More</a>
+            <a href="#About"><span></span>Learn More</a>
           </div>
         </div>
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -76,7 +77,9 @@
                 <br/>
                 <br/>
                 <br/>
-                <h4 class="modal-title" id="myModalLabel">DELTA MU KAPPA RUSH SCHEDULE</h4>
+                <h4 class="modal-title" id="myModalLabel">DELTA MU KAPPA</h4>
+                <br />
+                <h4 class="modal-title" id="myModalLabel">RUSH SCHEDULE</h4>
               </div>
               <div class="modal-body">
               <div id="rush_schedule">
@@ -142,7 +145,7 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="close_modal" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="close_modal" data-dismiss="modal">Close</button> -->
                 <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
               </div>
             </div>
@@ -155,41 +158,42 @@
     <a id="About">
     <div class="About row">
         <div class="container">
-        <h1 id="aboutTitle">About</h1>
-        <div class="fa fa-users col-lg-2 col-lg-offset-2" id="spanId1">
-           <br> <h3 id="pillars">Brotherhood</h3>
+          <h1 id="aboutTitle">About</h1>
+          <div class="fa fa-users col-lg-2 col-lg-offset-2" id="spanId1">
+             <br> <h3 id="pillars">Brotherhood</h3>
+          </div>
+          <div class="col-lg-2 fa fa-handshake-o" id="spanId2">
+              <br> <h3 id="pillars">Service</h3>
+          </div>
+          <div class="col-lg-2 fa fa-gavel" id="spanId3">
+              <br> <h3 id="pillars">Integrity</h3>
+          </div>
+          <div class="fa fa-lightbulb-o col-lg-2" id="spanId4">
+              <br><h3 id="pillars">Ambition</h3>
+          </div>
+          
+          <h2 class="col-lg-8 col-lg-offset-2" id="aboutDescription">
+          Delta Mu Kappa was established in May of 2017. Our goal is to foster a perpetual brotherhood dedicated to empowering one another and advancing society through entrepreneurship and innovation.
+          </h2>
         </div>
-        <div class="col-lg-2 fa fa-handshake-o" id="spanId2">
-            <br> <h3 id="pillars">Service</h3>
-        </div>
-        <div class="col-lg-2 fa fa-gavel" id="spanId3">
-            <br> <h3 id="pillars">Integrity</h3>
-        </div>
-        <div class="fa fa-lightbulb-o col-lg-2" id="spanId4">
-            <br><h3 id="pillars">Ambition</h3>
-        </div>
-        
-        <h2 class="col-lg-8 col-lg-offset-2" id="aboutDescription">
-        Delta Mu Kappa was established in May of 2017. Our goal is to foster a perpetual brotherhood dedicated to empowering one another and advancing society through entrepreneurship and innovation.
-        </h2>
-    </div>
-    </div>
+      </div>
     </a>
     
     <!-- Third Block / Events -->
     <a id="Events">
     <div class="Events row">
         <h1 id="eventsTitle">Events</h1>
-        
-        <div class="col-lg-4 col-lg-offset-2 col-sm-4 col-sm-offset-2" id="changeInfo">
+        <div class="col-lg-4 col-lg-offset-2" id="changemakersPic">
+            <img src="assets/images/lightbulb.png" id="changePic">
+        </div>
+
+        <div class="col-lg-4" id="changeInfo">
             <blockquote id="changeBlock">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem vel purus dignissim, sit amet mollis sapien porta. Nam sollicitudin eget purus non interdum. Quisque viverra leo at accumsan pretium. Fusce vel lorem quis sapien viverra luctus a sit amet felis. Donec at vehicula mi. Fusce erat arcu, suscipit at iaculis vitae, tristique vel diam. Aliquam ligula est, feugiat nec hendrerit eu, consectetur non nisi. Proin ut faucibus sapien.
             </blockquote>
         </div>
         
-        <div class="col-lg-4 col-sm-4" id="changemakersPic">
-            <img src="assets/images/lightbulb.png" id="changePic">
-        </div>
+        
         
         <div class="col-lg-4 col-lg-offset-2 col-sm-4 col-sm-offset-2" id="indyPic">
             <img src="assets/images/indylol.jpg" id="skyline">
@@ -201,16 +205,17 @@
             </blockquote>
         </div>
              
+        <div class="col-lg-4 col-lg-offset-2" id="startupPic">
+            <img src="assets/images/startup.png" id="startPic">
+        </div>
         
-        <div class="col-lg-4 col-lg-offset-2 col-sm-4 col-sm-offset-2" id="startupInfo">
+        <div class="col-lg-4" id="startupInfo">
             <blockquote id="startupBlock">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem vel purus dignissim, sit amet mollis sapien porta. Nam sollicitudin eget purus non interdum. Quisque viverra leo at accumsan pretium. Fusce vel lorem quis sapien viverra luctus a sit amet felis. Donec at vehicula mi. Fusce erat arcu, suscipit at iaculis vitae, tristique vel diam. Aliquam ligula est, feugiat nec hendrerit eu, consectetur non nisi. Proin ut faucibus sapien.
             </blockquote>
         </div>
 
-        <div class="col-lg-4 col-lg-sm-4" id="startupPic">
-            <img src="assets/images/startup.png" id="startPic">
-        </div>
+        
     </div>
     </a>
     <!--Fourth Block / Leadership -->
